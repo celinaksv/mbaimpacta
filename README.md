@@ -1,4 +1,4 @@
-# mbaimpacta - Disciplina APIs & Web Applications
+# MBA Impacta - Disciplina APIs & Web Applications
 
 Atividade:
 Vamos construir um projeto simples, capaz de calcular o IMC (índice de massa corporal), de acordo com a seguinte especificação:
