@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>Atividade Impacta</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <link rel='stylesheet' type='text/css' media='screen' href='assets/css/style.css'>
+    <script src='js/script.js'></script>
+</head>
+<body>
+    <h1>Calculadora de índice de massa corporal</h1>
+
+    <table>
+        <tr>
+            <th>Classificações</th>
+            <th>Parâmetros</th>
+        </tr>
+        <tr>
+            <td>Magreza</td>
+            <td>menor que 18,5 kg/m²</td>
+        </tr>
+        <tr>
+            <td>Normal</td>
+            <td>entre 18,5 e 24,9 kg/m²</td>
+        </tr>
+        <tr>
+            <td>Sobrepeso</td>
+            <td>entre 24,9 e 30 kg/m²</td>
+        </tr>
+        <tr>
+            <td>Obesidade</td>
+            <td>maior que 30 kg/m²</td>
+        </tr>
+    </table>
+
+    <p></p>
+    <div>
+        <h4>Siga os passos abaixo para saber seu IMC</h4>
+
+        <form id="form"> 
+            <div class="form-inputs">
+                <div class="form-control">
+                    <label for="peso">Digite quantos kg você pesa</label>
+                    <input type="text" id="peso" placeholder="Exemplo 80.20" required />
+                </div>
+                <div class="form-control">
+                    <label for="altura">Digite sua altura</label>
+                    <input type="text" id="altura" placeholder="Exemplo 1.50" required /> 
+                </div>
+            </div>
+
+            <div class="action-control">
+                <button type="button" class="action" onclick="botaocalcular()">Clique para saber seu resultado</button>
+            </div>
+        </form>
+
+        <div id="resultado">
+            <p>Seu IMC é: <span id="imc"></span></p>
+            <p>Classificação: <span id="classificacao"></span></p>
+        </div>
+    </div>
+</body>
+</html>
